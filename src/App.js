@@ -15,7 +15,7 @@ class App extends Component {
   componentDidMount() {
     axios
       .get(
-        `https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,XRP,BCH,DOGE,DSH,BNB,ADA&tsyms=USD,EUR,NGN&api_key=${process.env.REACT_APP_API_KEY}`
+        `https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP,DOGE,BNB,ADA,SHIB&tsyms=USD,EUR,NGN&api_key=${process.env.REACT_APP_API_KEY}`
       )
       .then((res) => {
         const cryptos = res.data;
