@@ -1,9 +1,16 @@
-body{
+body {
   background: #f4f4f4;
   color: #03588c;
 }
 
-.App-header{
+header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-content: space-between;
+}
+
+.App-header {
   font-weight: bolder;
   min-height: 70px;
   font-size: 2rem;
@@ -18,13 +25,26 @@ body{
   padding-left: 20px;
 }
 
+.refresh-btn {
+  appearance: none;
+  color: #03588c;
+  border: none;
+  text-decoration: underline;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 130.1%;
+  padding: 0.25rem 0.5rem;
+}
+
 table {
   padding: 50px;
   margin-top: 70px;
   width: 100%;
 }
 
-td, th {
+td,
+th {
   border-bottom: 1px solid #d99543;
   padding: 15px;
   text-align: center;
@@ -34,12 +54,12 @@ th {
   font-size: 1.1rem;
 }
 
-.left{
+.left {
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-footer{
+footer {
   background: #03588c;
   color: #d99543;
   bottom: 0;

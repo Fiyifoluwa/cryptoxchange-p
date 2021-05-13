@@ -25,9 +25,18 @@ class App extends Component {
   }
 
   render() {
+    function refreshPage() {
+      window.location.reload(false);
+    }
+
     return (
       <div className="App">
-        <header className="App-header">CryptoXchange</header>
+        <header>
+          <h1 className="App-header">CryptoXchange</h1>
+          <button className="refresh-btn" onClick={refreshPage}>
+            Refresh
+          </button>
+        </header>
         <table id="table">
           <thead>
             <tr>
