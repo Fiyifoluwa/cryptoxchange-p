@@ -9,17 +9,17 @@ header {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  width: 100%;
+  width: 90%;
+  min-height: 70px;
   top: 0;
   z-index: 2;
+  margin: auto;
 }
 
 .App-header {
   font-weight: bolder;
-  min-height: 70px;
   font-size: 2rem;
   padding: 5px;
-  padding-left: 20px;
 }
 
 .refresh-btn {
@@ -30,8 +30,29 @@ header {
   background: transparent;
   font-weight: bold;
   font-size: 1rem;
-  line-height: 130.1%;
-  padding: 0.25rem 0.5rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    margin: auto;
+  }
+
+  .App-header {
+    font-weight: bolder;
+    min-height: 70px;
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  .refresh-btn {
+    appearance: none;
+    color: #03588c;
+    border: none;
+    text-decoration: underline;
+    background: transparent;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
 }
 
 table {
